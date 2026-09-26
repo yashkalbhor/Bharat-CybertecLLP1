@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>About Bharat Cybertec LLP</title>
 
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
         <div class="container">
 
             <a href="#" class="logo">
-                <img src="../assets/image/logo3.png" alt="Logo">
+                <img src="/logo3.png" alt="Logo">
             </a>
 
             <div class="menu-toggle" id="menuToggle">
@@ -81,7 +81,7 @@ Audits & Consulting
 
     </nav>
 
-    <script src="../assets/js/togglebtn.js"></script>
+    <script src="/js/togglebtn.js"></script>
 
 
 <!---hero section--->
@@ -89,7 +89,7 @@ Audits & Consulting
 
     <!-- Background Video -->
     <video autoplay muted loop playsinline class="about-video">
-        <source src="../assets/image/201735-916310640_medium.mp4" type="video/mp4">
+        <source src="/201735-916310640_medium.mp4" type="video/mp4">
     </video>
 
 
@@ -178,7 +178,7 @@ Audits & Consulting
 
         <div class="overview-image">
 
-            <img src="../assets/image/shield.png"
+            <img src="/shield.png"
             alt="Cyber Security">
 
         </div>
@@ -998,115 +998,3 @@ Audits & Consulting
 </section>
 
 <!-- Footer Section -->
-
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- Company -->
-        <div class="footer-box">
-            <img src="../assets/image/logo3.png" alt="Logo" class="footer-logo">
-
-            <p>
-                Bharat Cybertec LLP provides cybersecurity,
-                software development, SSL certificates,
-                and IT consulting solutions for businesses.
-            </p>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="footer-box">
-
-            <h3>Quick Links</h3>
-
-           <ul>
-    <li><a href="home.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="career.html">Career</a></li>
-    <li><a href="resources.html">Resources</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
-
-        </div>
-
-        <!-- Services -->
-        <div class="footer-box">
-
-            <h3>Services</h3>
-
-            <ul>
-                <li><a href="#">Cyber Security</a></li>
-                <li><a href="#">SSL Certificates</a></li>
-                <li><a href="#">Software Development</a></li>
-                <li><a href="#">Audits & Consulting</a></li>
-            </ul>
-
-        </div>
-
-        <!-- Contact -->
-        <div class="footer-box">
-
-            <h3>Contact</h3>
-
-            <p>📍 Pune, Maharashtra</p>
-            <p>📧 admin@bharatcybertec.com</p>
-            <p>📞 +91 9822494949</p>
-            <p>🌐 www.bharatcybertec.com</p>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Bharat Cybertec LLP. All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
-
-<script>
-    const statSection = document.querySelector(".stats");
-    const counters = document.querySelectorAll(".counter-number");
-    let hasCounted = false;
-
-    function startCounterAnimation() {
-        counters.forEach(counter => {
-            const target = +counter.getAttribute("data-target");
-            let count = 0;
-            const duration = 2000;
-            const increment = target / (duration / 16);
-
-            const updateCount = () => {
-                count += increment;
-                if (count < target) {
-                    counter.innerText = Math.ceil(count) + "+";
-                    requestAnimationFrame(updateCount);
-                } else {
-                    counter.innerText = target + "+";
-                }
-            };
-
-            updateCount();
-        });
-    }
-
-    if (statSection && counters.length > 0) {
-        const statsObserver = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting && !hasCounted) {
-                hasCounted = true;
-                startCounterAnimation();
-            }
-        }, { threshold: 0.25 });
-
-        statsObserver.observe(statSection);
-    }
-</script>
-
-</body>
-</html>
