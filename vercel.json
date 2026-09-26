@@ -10,5 +10,16 @@
     { "source": "/ssl-certificates", "destination": "/home page/ssl-certificates.html" },
     { "source": "/software-development", "destination": "/home page/software-development.html" },
     { "source": "/audits-consulting", "destination": "/home page/audits-consulting.html" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "cache-control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
   ]
 }
