@@ -1,9 +1,14 @@
 {
-  "buildCommand": "cd && npm run build",
-  "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/home page/$1.html" },
-    { "source": "/(.*)", "destination": "/home page/index.html" }
+    { "source": "/", "destination": "/home page/home.html" },
+    { "source": "/home", "destination": "/home page/home.html" },
+    { "source": "/about", "destination": "/home page/about.html" },
+    { "source": "/career", "destination": "/home page/career.html" },
+    { "source": "/resources", "destination": "/home page/resources.html" },
+    { "source": "/contact", "destination": "/home page/contact.html" },
+    { "source": "/cyber-security", "destination": "/home page/cyber-security.html" },
+    { "source": "/ssl-certificates", "destination": "/home page/ssl-certificates.html" },
+    { "source": "/software-development", "destination": "/home page/software-development.html" },
+    { "source": "/audits-consulting", "destination": "/home page/audits-consulting.html" }
   ]
 }
