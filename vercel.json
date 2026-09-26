@@ -2,14 +2,24 @@
   "rewrites": [
     { "source": "/", "destination": "/home page/home.html" },
     { "source": "/home", "destination": "/home page/home.html" },
+    { "source": "/home.html", "destination": "/home page/home.html" },
     { "source": "/about", "destination": "/home page/about.html" },
+    { "source": "/about.html", "destination": "/home page/about.html" },
     { "source": "/career", "destination": "/home page/career.html" },
+    { "source": "/career.html", "destination": "/home page/career.html" },
+    { "source": "/career-form.html", "destination": "/home page/career-form.html" },
     { "source": "/resources", "destination": "/home page/resources.html" },
+    { "source": "/resources.html", "destination": "/home page/resources.html" },
     { "source": "/contact", "destination": "/home page/contact.html" },
+    { "source": "/contact.html", "destination": "/home page/contact.html" },
     { "source": "/cyber-security", "destination": "/home page/cyber-security.html" },
+    { "source": "/cyber-security.html", "destination": "/home page/cyber-security.html" },
     { "source": "/ssl-certificates", "destination": "/home page/ssl-certificates.html" },
+    { "source": "/ssl-certificates.html", "destination": "/home page/ssl-certificates.html" },
     { "source": "/software-development", "destination": "/home page/software-development.html" },
-    { "source": "/audits-consulting", "destination": "/home page/audits-consulting.html" }
+    { "source": "/software-development.html", "destination": "/home page/software-development.html" },
+    { "source": "/audits-consulting", "destination": "/home page/audits-consulting.html" },
+    { "source": "/audits-consulting.html", "destination": "/home page/audits-consulting.html" }
   ],
   "headers": [
     {
