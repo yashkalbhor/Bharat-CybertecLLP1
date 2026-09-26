@@ -12,6 +12,6 @@
     { "src": "/ssl-certificates", "dest": "/ssl-certificates.html" },
     { "src": "/software-development", "dest": "/software-development.html" },
     { "src": "/audits-consulting", "dest": "/audits-consulting.html" },
-    { "src": "/(.*)", "dest": "/$1" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
