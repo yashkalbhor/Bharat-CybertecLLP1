@@ -1,17 +1,9 @@
 {
+  "buildCommand": "cd && npm run build",
   "cleanUrls": true,
   "trailingSlash": false,
-  "routes": [
-    { "src": "/", "dest": "/home page/index.html" },
-    { "src": "/home", "dest": "/home page/home.html" },
-    { "src": "/about", "dest": "/home page/about.html" },
-    { "src": "/career", "dest": "/home page/career.html" },
-    { "src": "/resources", "dest": "/home page/resources.html" },
-    { "src": "/contact", "dest": "/home page/contact.html" },
-    { "src": "/cyber-security", "dest": "/home page/cyber-security.html" },
-    { "src": "/ssl-certificates", "dest": "/home page/ssl-certificates.html" },
-    { "src": "/software-development", "dest": "/home page/software-development.html" },
-    { "src": "/audits-consulting", "dest": "/home page/audits-consulting.html" },
-    { "src": "/(.*)", "dest": "/home page/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/home page/$1.html" },
+    { "source": "/(.*)", "destination": "/home page/index.html" }
   ]
 }
