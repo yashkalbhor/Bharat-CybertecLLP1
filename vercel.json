@@ -2,16 +2,16 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/home", "dest": "/home.html" },
-    { "src": "/about", "dest": "/about.html" },
-    { "src": "/career", "dest": "/career.html" },
-    { "src": "/resources", "dest": "/resources.html" },
-    { "src": "/contact", "dest": "/contact.html" },
-    { "src": "/cyber-security", "dest": "/cyber-security.html" },
-    { "src": "/ssl-certificates", "dest": "/ssl-certificates.html" },
-    { "src": "/software-development", "dest": "/software-development.html" },
-    { "src": "/audits-consulting", "dest": "/audits-consulting.html" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/", "dest": "/home page/index.html" },
+    { "src": "/home", "dest": "/home page/home.html" },
+    { "src": "/about", "dest": "/home page/about.html" },
+    { "src": "/career", "dest": "/home page/career.html" },
+    { "src": "/resources", "dest": "/home page/resources.html" },
+    { "src": "/contact", "dest": "/home page/contact.html" },
+    { "src": "/cyber-security", "dest": "/home page/cyber-security.html" },
+    { "src": "/ssl-certificates", "dest": "/home page/ssl-certificates.html" },
+    { "src": "/software-development", "dest": "/home page/software-development.html" },
+    { "src": "/audits-consulting", "dest": "/home page/audits-consulting.html" },
+    { "src": "/(.*)", "dest": "/home page/index.html" }
   ]
 }
