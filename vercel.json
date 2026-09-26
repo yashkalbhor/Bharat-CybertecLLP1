@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/assets/image/:path*", "destination": "/:path*" },
+    { "source": "/assets/js/:path*", "destination": "/js/:path*" },
     { "source": "/", "destination": "/home page/home.html" },
     { "source": "/home", "destination": "/home page/home.html" },
     { "source": "/home.html", "destination": "/home page/home.html" },
