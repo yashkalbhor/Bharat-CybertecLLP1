@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "routes": [
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/home", "dest": "/home.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/career", "dest": "/career.html" },
+    { "src": "/resources", "dest": "/resources.html" },
+    { "src": "/contact", "dest": "/contact.html" },
+    { "src": "/cyber-security", "dest": "/cyber-security.html" },
+    { "src": "/ssl-certificates", "dest": "/ssl-certificates.html" },
+    { "src": "/software-development", "dest": "/software-development.html" },
+    { "src": "/audits-consulting", "dest": "/audits-consulting.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
